@@ -35,8 +35,8 @@ class CustomButton: UIButton {
     }
     
     required init?(coder: NSCoder) {
-        fatalError()
-        
+        super.init(coder: coder)
+        setupUIElements()
     }
     
     //MARK: - Functions
@@ -49,7 +49,7 @@ class CustomButton: UIButton {
         clipsToBounds = false
         layer.cornerRadius = 10
         layer.borderWidth = 2
-        layer.borderColor = UIColor.yellow.cgColor
+        layer.borderColor = UIColor.blue.cgColor
         backgroundColor = .systemBlue
         label_One.frame = CGRect(x: 5, y: 0, width: frame.size.width - 10, height: frame.size.height / 2)
         label_Two.frame = CGRect(x: 5, y: frame.size.height / 2, width: frame.size.width - 10, height: frame.size.height / 2)
