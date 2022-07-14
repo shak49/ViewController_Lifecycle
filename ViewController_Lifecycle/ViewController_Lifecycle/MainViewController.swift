@@ -15,10 +15,15 @@ class MainViewController: UIViewController {
     private var customButton: CustomButton!
 
     //MARK: - Lifecycles
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func loadView() {
+        super.loadView()
         view.backgroundColor = .white
         setupUIElements()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
 
     //MARK: - Functions
