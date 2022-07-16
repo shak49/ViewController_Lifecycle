@@ -1,4 +1,4 @@
-# View Controller Lifecycle
+# View Lifecycle
 
 
    - Custom View Lifecycle
