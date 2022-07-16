@@ -8,7 +8,7 @@
 import UIKit
 
 
-class CustomButton: UIButton {
+final class CustomButton: UIButton {
     //MARK: - Properties
     private let label_One: UILabel = {
         let label = UILabel()
@@ -34,6 +34,7 @@ class CustomButton: UIButton {
         setupUIElements()
     }
     
+    // This initializer is responsible for translating anything inside its block for .xib or .nib in behalf of storyboard
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupUIElements()
