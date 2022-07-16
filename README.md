@@ -2,3 +2,6 @@
 
 
    - Custom View Lifecycle
+      - required init?(coder: NSCoder)
+      
+   - View Lifecycle
