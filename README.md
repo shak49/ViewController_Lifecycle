@@ -8,3 +8,4 @@
       - LoadView
       - ViewDidLoad
       - ViewWillAppear
+      - ViewDidAppear
