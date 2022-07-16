@@ -17,6 +17,7 @@
 		6D39D56428835B28009A1326 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39D56328835B28009A1326 /* Response.swift */; };
 		6D39D56628835B84009A1326 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39D56528835B84009A1326 /* NetworkService.swift */; };
 		6D39D56828835BC6009A1326 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39D56728835BC6009A1326 /* NetworkError.swift */; };
+		6D39D56A288367CB009A1326 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D39D569288367CB009A1326 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6D39D56328835B28009A1326 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		6D39D56528835B84009A1326 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6D39D56728835BC6009A1326 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		6D39D569288367CB009A1326 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				6D39D5492880587B009A1326 /* AppDelegate.swift */,
 				6D39D54B2880587B009A1326 /* SceneDelegate.swift */,
 				6D39D54D2880587B009A1326 /* MainViewController.swift */,
+				6D39D569288367CB009A1326 /* CustomTableViewCell.swift */,
 				6D39D56128833725009A1326 /* CustomView.swift */,
 				6D39D55F2880A3D3009A1326 /* CustomButton.swift */,
 				6D39D5522880587D009A1326 /* Assets.xcassets */,
@@ -154,6 +157,7 @@
 				6D39D5602880A3D3009A1326 /* CustomButton.swift in Sources */,
 				6D39D54E2880587B009A1326 /* MainViewController.swift in Sources */,
 				6D39D54A2880587B009A1326 /* AppDelegate.swift in Sources */,
+				6D39D56A288367CB009A1326 /* CustomTableViewCell.swift in Sources */,
 				6D39D56428835B28009A1326 /* Response.swift in Sources */,
 				6D39D54C2880587B009A1326 /* SceneDelegate.swift in Sources */,
 				6D39D56628835B84009A1326 /* NetworkService.swift in Sources */,
