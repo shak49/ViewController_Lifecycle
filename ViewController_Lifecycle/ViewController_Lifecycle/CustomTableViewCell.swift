@@ -40,6 +40,14 @@ class CustomTableViewCell: UITableViewCell {
     private func setupUIElements() {
         titleLable.frame = CGRect(x: 0, y: 0, width: frame.size.width - 16, height: frame.size.height - 8)
         bodyLable.frame = CGRect(x: 0, y: 0, width: frame.size.width - 16, height: frame.size.height - 8)
+        NSLayoutConstraint.activate([
+            titleLable.topAnchor.constraint(equalTo: topAnchor),
+            bodyLable.bottomAnchor.constraint(equalTo: bottomAnchor),
+            titleLable.leftAnchor.constraint(equalTo: leftAnchor),
+            bodyLable.leftAnchor.constraint(equalTo: leftAnchor),
+            titleLable.rightAnchor.constraint(equalTo: rightAnchor),
+            bodyLable.rightAnchor.constraint(equalTo: rightAnchor)
+        ])
         backgroundColor = .white
         addSubview(titleLable)
         addSubview(bodyLable)

@@ -8,7 +8,7 @@
 import UIKit
 
 
-struct Response: Codable {
-    let userId, id: Int?
-    let title, body: String?
+struct User: Codable {
+    let userId, id: Int
+    let title, body: String
 }
