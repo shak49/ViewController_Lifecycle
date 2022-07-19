@@ -9,6 +9,8 @@ import UIKit
 
 
 struct User: Codable {
-    let userId, id: Int
-    let title, body: String
+    let userId: Int
+    let id: Int
+    let title: String
+    let body: String
 }
