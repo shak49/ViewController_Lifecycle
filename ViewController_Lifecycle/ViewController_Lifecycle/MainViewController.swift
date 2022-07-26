@@ -15,6 +15,8 @@ class MainViewController: UIViewController {
     private var customButton: CustomButton!
     private var _view: CustomView!
     private var tableView: UITableView!
+    private var spinnerContainer = UIView()
+    private var spinner = UIActivityIndicatorView(style: .large)
 
     var users: [User] = []
     
@@ -24,7 +26,7 @@ class MainViewController: UIViewController {
         // setting up the view for loading to memory
         //customButton = CustomButton(frame: CGRect(x: 0, y: 0, width: 250, height: 55))
         //_view = CustomView(frame: CGRect(x: 20, y: 475, width: 350, height: 350))
-        tableView = UITableView(frame: .zero)
+        tableView = UITableView()
         self.view = tableView
     }
     
@@ -34,18 +36,19 @@ class MainViewController: UIViewController {
         //view.backgroundColor = .red
         //setupUIElements()
         setupTableView()
-        loadData()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.loadData()
+        }
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        print("View Will Appear")
-//    }
-//
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        print("View Did Appear")
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupSpinner()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 
     //MARK: - Functions
     func setupTableView() {
@@ -61,6 +64,15 @@ class MainViewController: UIViewController {
         customButton.configure(text_One: _title, text_Two: body)
         view.addSubview(customButton)
         view.addSubview(_view)
+    }
+    
+    func setupSpinner() {
+        spinnerContainer.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        spinner.center = self.view.center
+        spinner.color = .blue
+        spinnerContainer.addSubview(spinner)
+        view.addSubview(spinnerContainer)
+        spinner.startAnimating()
     }
     
     func loadData() {
@@ -93,4 +105,3 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 }
-
