@@ -38,17 +38,8 @@ class CustomTableViewCell: UITableViewCell {
     
     //MARK: - Functions
     private func setupUIElements() {
-        titleLable.frame = CGRect(x: 0, y: 0, width: frame.size.width - 16, height: frame.size.height - 8)
-        bodyLable.frame = CGRect(x: 0, y: 0, width: frame.size.width - 16, height: frame.size.height - 8)
-        NSLayoutConstraint.activate([
-            titleLable.topAnchor.constraint(equalTo: topAnchor),
-            bodyLable.bottomAnchor.constraint(equalTo: bottomAnchor),
-            titleLable.leftAnchor.constraint(equalTo: leftAnchor),
-            bodyLable.leftAnchor.constraint(equalTo: leftAnchor),
-            titleLable.rightAnchor.constraint(equalTo: rightAnchor),
-            bodyLable.rightAnchor.constraint(equalTo: rightAnchor)
-        ])
-        backgroundColor = .white
+        titleLable.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
+        bodyLable.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
         addSubview(titleLable)
         addSubview(bodyLable)
     }
